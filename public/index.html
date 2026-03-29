@@ -265,7 +265,7 @@ async function handleSubscribe(e) {
   msg.textContent = '';
 
   try {
-    const res = await fetch('http://35.86.158.139:3100/subscribe', {
+    const res = await fetch('http://35.86.158.139/api/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, frequency: freq })
